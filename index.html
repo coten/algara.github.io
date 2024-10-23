@@ -3,13 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="High-mix, low-volume manufacturing requires solutions
+        that can easily adapt to changing products and tooling.
+        In this work, we present a novel approach for robotic assembly
+        that employs a combination of distinct language model agents
+        to automatically adapt learning from one initial assembly task
+        to an alternative assembly of similar kind.">
+  <meta name="keywords" content="ALGARA, Agentic Systems, Large Language Models, Adaptive Robotics, Robotic Assembly">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>ALGARA: Agentic Language-Grounded Adaptive Robotic Assembly</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -63,17 +68,11 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
+          <a class="navbar-item" href="https://taprac.github.io">
+            TAPRAC
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://algara.github.io">
+            ALGARA
           </a>
         </div>
       </div>
@@ -88,32 +87,19 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+          <h1 class="title is-1 publication-title">ALGARA: Agentic Language-Grounded Adaptive Robotic Assembly</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
+              <a href="https://keunhong.com">Jaimyn Drake</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
+              <a href="https://utkarshsinha.com">Nicholas Cote</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="https://jonbarron.info">Sachin Chitta</a><sup>1</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Autodesk, Inc</span>
           </div>
 
           <div class="column has-text-centered">
@@ -128,7 +114,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -136,9 +122,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -146,9 +132,9 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -156,16 +142,16 @@
                   </span>
                   <span>Code</span>
                   </a>
-              </span>
+              </span> -->
               <!-- Dataset Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
-                  </a>
+                  </a> -->
             </div>
 
           </div>
@@ -258,31 +244,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            High-mix, low-volume manufacturing requires solutions
+            that can easily adapt to changing products and tooling.
+            In this work, we present a novel approach for robotic assembly
+            that employs a combination of distinct language model agents
+            to automatically adapt learning from one initial assembly task
+            to an alternative assembly of similar kind. We take advantage
+            of the unique benefits offered by Large Language Models and
+            Vision-Language-Action Models to build an iterative, languagegrounded
+            architecture that can assemble novel parts within
+            millimeter-precision tolerances. For the example of a wheel
+            insertion task, we demonstrate that our agentic approach
+            outperforms single-model methods in generalizing to out-ofdistribution
+            parts and grasps, making it well-suited for lowvolume,
+            high-mix manufacturing environments.
           </p>
         </div>
       </div>
@@ -444,11 +419,11 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@article{drake2024algara,
+  author    = {Drake, Jaimyn and Cote, Nicholas and Chitta, Sachin},
+  title     = {ALGARA: Agentic Language-Grounded Adaptive Robotic Assembly},
+  journal   = {self},
+  year      = {2024},
 }</code></pre>
   </div>
 </section>
